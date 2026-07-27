@@ -1,11 +1,7 @@
 # 機関リポジトリキーワード検索・収集システム
 
-## 概要
-
-本システムは、大学機関リポジトリに登録された研究成果を対象として、指定したキーワードで全文検索を実施し、検索結果から文献情報およびメタデータを自動収集するためのプログラムです。
-
-収集したデータは以下のファイルとして出力されます。
-
+## 1.概要
+本システムは、大学機関リポジトリに登録された研究成果を対象として、指定したキーワードで全文検索を実施し、検索結果から文献情報およびメタデータを自動収集するためのプログラムです。収集したデータは以下のファイルとして出力されます。
 - `oai_result.csv`
 - `oai_result_by_area.xlsx`
 - `error_log.txt`
@@ -15,34 +11,27 @@
 ### 利用例
 
 #### 地域研究
-
 - 鹿児島市
 - 霧島市
 - 桜島
-- 与論島
 
-#### キーワード調査
-
+#### キーワード例
 - 生成AI
 - LLM
-- RAG
 
 ---
 
-# 汎用性
+## 2.汎用性
 
 本システムは鹿児島大学機関リポジトリ向けに作成されていますが、検索URLおよびAPI URLを変更することで、他大学や研究機関のリポジトリにも応用可能です。
 
 ## 現在設定されているURL
 
 ### 検索画面
-
 ```text
-https://ir.kagoshima-u.ac.jp/search
+https://ir.kagoshima-u.ac.jp/search/
 ```
-
 ### API
-
 ```text
 https://ir.kagoshima-u.ac.jp/api/records/
 ```
@@ -52,16 +41,17 @@ https://ir.kagoshima-u.ac.jp/api/records/
 以下の部分を各機関のURLへ変更してください。
 
 ```text
-https://ir.kagoshima-u.ac.jp
+https://ir.kagoshima-u.ac.jp/
+https://ir.kagoshima-u.ac.jp/api/records/
 ↓
 各機関リポジトリのURL
 ```
 
 ---
 
-# 必要環境
+## 3.必要環境
 
-## 1. OS
+### 3.1. OS
 
 推奨環境
 
@@ -69,13 +59,13 @@ https://ir.kagoshima-u.ac.jp
 Windows 11
 ```
 
-## 2. Google Chrome
+### 3.2. Google Chrome
 
 Seleniumを利用して検索を実施するため、最新版のGoogle Chromeをインストールしてください。
 
 https://www.google.com/chrome/
 
-## 3. Python
+### 3.3. Python
 
 推奨バージョン
 
@@ -83,7 +73,7 @@ https://www.google.com/chrome/
 Python 3.11以上
 ```
 
-### Pythonのインストール
+#### Pythonのインストール
 
 Python公式サイトからインストールしてください。
 
@@ -91,19 +81,19 @@ https://www.python.org
 
 ※ インストール時に **Add Python to PATH** にチェックを入れてください。
 
-### バージョン確認
+#### バージョン確認
 
 ```bash
 python --version
 ```
 
-### 必要ライブラリのインストール
+#### 必要ライブラリのインストール
 
 ```bash
 pip install selenium pandas requests openpyxl
 ```
 
-### インストール確認
+#### インストール確認
 
 ```bash
 pip list
@@ -120,13 +110,13 @@ openpyxl
 
 ---
 
-# 事前準備
+# 4.事前準備
 
 ## 1. 検索キーワードファイル
 
 検索対象となるキーワードを1行1件で記載します。
 
-今回は `areas.txt` を利用していますが、用途に応じて変更可能です。
+今回は，ファイル名 `areas.txt` を利用していますが、用途に応じて変更可能です。
 
 ### 例：areas.txt
 
