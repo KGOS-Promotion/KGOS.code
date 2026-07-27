@@ -404,19 +404,12 @@ MIT Licenseの範囲内で、商用・非商用を問わず利用、改変、再
 
 ```text
 KGOS.code Regional Dataset
-
-KGOS
-
-https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset
-
-（参照日：YYYY年MM月DD日）
+KGOS:https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset（参照日：YYYY年MM月DD日）
 ```
 
 ### 推奨引用例
 
 ```text
-KGOS.
-「KGOS.code Regional Dataset」.
-https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset
-（参照日：YYYY年MM月DD日）
+KGOS:「KGOS.code Regional Dataset」.
+https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset（参照日：YYYY年MM月DD日）
 ```
