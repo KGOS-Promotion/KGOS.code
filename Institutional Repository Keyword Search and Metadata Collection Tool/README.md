@@ -206,16 +206,16 @@ https://ir.kagoshima-u.ac.jp/search?page=1&size=50&sort=custom_sort&search_type=
 
 ## 実行方法
 
-### 1. コマンドプロンプトまたは PowerShell を開き、対象ディレクトリへ移動します。
+### 1. コマンドプロンプトまたは PowerShell を開きます。
 
-### 2. 作業フォルダへ移動
+### 2. 対象ディレクトリへ移動します。
 
-例：保存先フォルダをご指定ください。
+以下のように，対象ディレクトリをご指定ください。
 ```bash
 cd C:/kgos/hp
 ```
 
-### 3. プログラム実行
+### 3. プログラムを実行します。
 
 ```bash
 python run_meta_collector.py
