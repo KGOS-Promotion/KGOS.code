@@ -346,7 +346,9 @@ max_workers = 2 ～ 5
 本ソースコードを利用した研究成果 等を公表する場合、または改変して再配布する場合は、以下の出典表記をお願いいたします。
 
 ```text
-KGOS:https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset（YYYY年MM月DD日取得）
+KGOS:
+https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
+（YYYY年MM月DD日取得）
 ```
 
 ---
