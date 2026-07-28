@@ -146,12 +146,12 @@ C:/kgos/hp/indextree
 1. コマンドプロンプトまたは PowerShell を開きます。
 
 2. 対象ディレクトリへ移動します。
-
+以下のように，対象ディレクトリを指定します。
 ```bash
 cd C:/kgos/hp/indextree
 ```
 
-3. プログラム実行
+3. プログラムを実行します。
 ```bash
 python  tree_structure_retrieval.py
 ```
