@@ -1,4 +1,4 @@
-<img width="633" height="222" alt="image" src="https://github.com/user-attachments/assets/70282899-fd89-4f41-866c-0eed9af37e45" /># 機関リポジトリ キーワード検索・書誌情報収集ツール
+# 機関リポジトリ キーワード検索・書誌情報収集ツール
 
 ## 概要
 
