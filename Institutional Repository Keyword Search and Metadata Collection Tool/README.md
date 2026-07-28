@@ -326,7 +326,7 @@ URL取得成功後にAPI取得が失敗した場合は、誤削除を防ぐた�
 文献詳細情報の取得には以下を利用しています。
 
 ```python
-ThreadPoolExecutor(max_workers=5)
+デフォルト：ThreadPoolExecutor(max_workers=3)
 ```
 
 ### 推奨設定
