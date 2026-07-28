@@ -27,7 +27,7 @@ https://www.lib.kagoshima-u.ac.jp/kgos/showcase/area_dataset/category/kagoshima/
 |------------|------|
 | `base_url.txt` | 検索対象機関リポジトリのURLを設定するファイル |
 | `keywords.txt` | 検索対象キーワード設定ファイル（１行１キーワード） |
-| `departments.txt` | 部局情報取得のためのインデックスツリー情報をまとめたファイル<br>（自動取得する場合、[3. 部局名－インデックスツリー番号対応表作成](#department-index-tree) をご参照ください。）|
+| `departments.txt` | 部局情報取得のためのインデックスツリー情報をまとめたファイル<br>（自動取得する場合、https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool をご活用ください。）|
 | `fields.txt` | 部局名を分野名に変換するための対応表 |
 
 ### 実行プログラム
@@ -138,7 +138,7 @@ pip list
 
 `departments.txt`
 
-　本ファイルは、API情報から部局名を抽出する際に必要となる、部局名とインデックスツリー番号を対応づけるファイルです。本対応表は「Automatic Index Tree Data Acquisition tool」（URL）を用いて自動取得可能です。また、以下例のとおり，インデックスツリーごとのページのURL末尾から手動で取得することも可能です。
+　本ファイルは、API情報から部局名を抽出する際に必要となる、部局名とインデックスツリー番号を対応づけるファイルです。本対応表は「Automatic Index Tree Data Acquisition tool」（[URL](https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool)）を用いて自動取得可能です。また、以下例のとおり，インデックスツリーごとのページのURL末尾から手動で取得することも可能です。
 
 
 #### インデックスツリー番号例
