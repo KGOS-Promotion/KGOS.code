@@ -143,9 +143,9 @@ C:/kgos/hp/indextree
 
 ## 実行手順
 
-1. Python を起動します。
+1. コマンドプロンプトまたは PowerShell を開きます。
 
-2. コマンドプロンプトまたは PowerShell を開き、対象ディレクトリへ移動します。
+2. 対象ディレクトリへ移動します。
 
 ```bash
 cd C:/kgos/hp/indextree
