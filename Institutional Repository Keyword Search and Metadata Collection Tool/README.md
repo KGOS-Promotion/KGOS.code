@@ -206,7 +206,7 @@ https://ir.kagoshima-u.ac.jp/search?page=1&size=50&sort=custom_sort&search_type=
 
 ## 実行方法
 
-### 1. Python起動
+### 1. コマンドプロンプトまたは PowerShell を開き、対象ディレクトリへ移動します。
 
 ### 2. 作業フォルダへ移動
 
