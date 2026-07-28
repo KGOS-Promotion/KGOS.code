@@ -1,1 +1,371 @@
+<img width="633" height="222" alt="image" src="https://github.com/user-attachments/assets/70282899-fd89-4f41-866c-0eed9af37e45" /># 機関リポジトリ キーワード検索・書誌情報収集ツール
 
+## 概要
+
+本ツールは、KGOS（Kagoshima Open Science）ホームページのサポートツールです。
+
+機関リポジトリを対象として、指定したキーワードによる全文検索を実施し、検索結果から文献の基本書誌情報およびメタデータを自動収集します。
+
+取得した情報から以下の一覧表を生成できます。
+
+- タイトル
+- 主著者
+- 部局（任意）
+- 分野（任意）
+- 出版年
+- 文献種別
+
+本ツールは JAIRO Cloud を利用した機関リポジトリを対象としています。
+
+### 利用事例
+
+KGOS > KGOS発信 > 地域別 文献・データセット > 鹿児島市
+
+https://www.lib.kagoshima-u.ac.jp/kgos/showcase/area_dataset/category/kagoshima/
+<img width="633" height="222" alt="image" src="https://github.com/user-attachments/assets/e408e0e1-784a-451b-b982-43105b5862a4" />
+
+### 特徴
+
+- キーワードによる全文検索
+- 書誌情報の自動収集
+- CSV・Excel出力
+- 差分管理機能
+- エラーリトライ機能
+- 並列取得対応
+- 部局・分野情報の付与
+
+---
+
+## プログラム構成
+
+### 入力ファイル
+
+| ファイル名 | 説明 |
+|------------|------|
+| `base_url.txt` | 検索対象機関リポジトリのURL設定 |
+| `keywords.txt` | 検索キーワード設定（1行1キーワード） |
+| `departments.txt` | 部局情報取得用インデックスツリー情報 |
+| `fields.txt` | 部局名→分野名変換対応表 |
+
+### 実行プログラム
+
+| ファイル名 | 説明 |
+|------------|------|
+| `run_meta_collector.py` | メインプログラム |
+
+### 出力ファイル
+
+| ファイル名 | 説明 |
+|------------|------|
+| `all_result.csv` | 検索結果全件一覧・差分管理用 |
+| `result_by_keyword.xlsx` | キーワード別一覧 |
+| `error_log.txt` | エラーログ |
+
+---
+
+## フォルダ構成
+
+```text
+C:\kgos\hp
+├─ base_url.txt
+├─ keywords.txt
+├─ departments.txt
+├─ fields.txt
+├─ run_meta_collector.py
+├─ all_result.csv
+├─ result_by_keyword.xlsx
+└─ error_log.txt
+```
+
+すべてのファイルを同一フォルダに配置してください。
+
+---
+
+## 動作環境
+
+### OS
+
+- Windows 11 推奨
+
+### Google Chrome
+
+Seleniumを利用するため、最新版のGoogle Chromeをインストールしてください。
+
+https://www.google.com/chrome/
+
+### Python
+
+- Python 3.11以上推奨
+
+Python公式サイト：
+
+https://www.python.org
+
+### 必要ライブラリ
+
+```bash
+pip install selenium pandas requests openpyxl
+```
+
+インストール確認：
+
+```bash
+pip list
+```
+
+以下が表示されていれば準備完了です。
+
+- selenium
+- pandas
+- requests
+- openpyxl
+
+---
+
+## 事前準備
+
+### 1. 機関リポジトリURL設定
+
+`base_url.txt`
+
+```text
+鹿児島大学:https://ir.kagoshima-u.ac.jp
+```
+
+---
+
+### 2. 検索キーワード設定
+
+`keywords.txt`
+
+```text
+桜島
+鹿児島市
+霧島市
+```
+
+1行につき1キーワードを設定してください。
+
+---
+
+### 3. 部局名－インデックスツリー番号対応表作成
+
+`departments.txt`
+
+本ツールでは、インデックスツリーごとのAPI情報から部局名を取得するため、部局名とインデックスツリー番号の対応表が必要です。
+
+#### インデックスツリー番号例
+
+```
+https://ir.kagoshima-u.ac.jp/search?page=1&size=50&sort=custom_sort&search_type=2&q=46
+```
+
+#### ツリー構造例
+
+```text
+法文学部 45
+├─ 学術誌論文 66
+├─ 紀要論文 46
+└─ 科研費報告 96
+```
+
+#### departments.txt 記載例
+
+```text
+法文学部:45,66,46,96
+教育学部:41,158,42,63
+```
+
+---
+
+### 4. 部局名－分野名対応表作成
+
+`fields.txt`
+
+部局名を分野名へ変換するための対応表です。
+
+#### 記載例
+
+```text
+医学部:医歯学系
+農学部:農水産学系
+```
+
+---
+
+## 処理フロー
+
+```text
+環境ファイル読込
+        ↓
+キーワード読込
+        ↓
+検索実行
+        ↓
+URL一覧取得
+        ↓
+API詳細取得
+        ↓
+差分判定
+        ↓
+CSV更新
+        ↓
+Excel出力
+```
+
+---
+
+## 実行方法
+
+### 1. Python起動
+
+### 2. 作業フォルダへ移動
+
+```bash
+cd C:/kgos/hp
+```
+
+### 3. プログラム実行
+
+```bash
+python run_meta_collector.py
+```
+
+---
+
+## 詳細仕様
+
+### URL一覧取得機能
+
+検索URL例：
+
+```text
+{機関リポジトリURL}/search?page=1&size=50&sort=custom_sort&q={keyword}
+```
+
+仕様：
+
+- 1ページ50件取得
+- 検索結果がなくなるまで巡回
+- URL取得完了後にAPI取得を実行
+
+#### リトライ機能
+
+通信エラー時：
+
+- 10秒待機
+- 再試行
+
+---
+
+### API取得機能
+
+取得URL例：
+
+```text
+{機関リポジトリURL}/api/records/{id}
+```
+
+取得項目：
+
+- レコードID
+- 更新日時
+- 著者
+- 所属
+- 発行年
+- 文献種別
+- その他メタデータ
+
+#### APIリトライ
+
+取得失敗時：
+
+| 回数 | 待機時間 |
+|--------|--------|
+| 1回目 | 5秒 |
+| 2回目 | 7秒 |
+| 3回目 | 10秒 |
+
+3回失敗した場合はエラーログへ出力します。
+
+#### エラーログ例
+
+```text
+日時: 2026-07-24 15:10:23
+グループ: 保健学研究科
+URL: https://ir.kagoshima-u.ac.jp/records/12345
+エラー種別: ReadTimeout
+内容: HTTPSConnectionPool(host='ir.kagoshima-u.ac.jp', port=443): Read timed out.
+```
+
+---
+
+## 差分管理
+
+検索結果は `all_result.csv` に保存されます。
+
+### 新規追加
+
+CSVに存在しないID
+
+→ 「追加」
+
+### 更新
+
+`updated` が変更されているID
+
+→ 「更新」
+
+### 削除
+
+前回存在したが今回存在しないID
+
+→ 削除
+
+---
+
+## データ保全機能
+
+URL取得成功後にAPI取得が失敗した場合は、誤削除を防ぐため削除判定を停止します。
+
+---
+
+## 並列取得
+
+文献詳細情報の取得には以下を利用しています。
+
+```python
+ThreadPoolExecutor(max_workers=5)
+```
+
+### 推奨設定
+
+サーバ負荷を考慮し、
+
+```python
+max_workers = 2 ～ 5
+```
+
+の範囲で調整してください。
+
+---
+
+## 引用について
+
+本ソースコードを利用した研究成果を公表する場合、または改変して再配布する場合は、以下の出典表記をお願いいたします。
+
+```text
+KGOS:
+https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset
+
+（YYYY年MM月DD日取得）
+```
+
+---
+
+## ライセンス
+
+ライセンス条件については、配布元リポジトリをご確認ください。
+
+- KGOS Repository
+  - https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset
