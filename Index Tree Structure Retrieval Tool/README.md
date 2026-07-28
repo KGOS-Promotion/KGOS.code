@@ -240,3 +240,12 @@ https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset
 
 （YYYY年MM月DD日取得）
 ```
+
+---
+
+## ライセンス
+
+ライセンス条件（MITライセンス）の詳細については、配布元リポジトリをご確認ください。
+
+- KGOS.code Repository
+  - https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset
