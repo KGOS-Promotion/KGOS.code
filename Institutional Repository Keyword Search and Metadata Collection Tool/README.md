@@ -27,8 +27,10 @@ https://www.lib.kagoshima-u.ac.jp/kgos/showcase/area_dataset/category/kagoshima/
 |------------|------|
 | `base_url.txt` | 検索対象機関リポジトリのURLを設定するファイル |
 | `keywords.txt` | 検索対象キーワード設定ファイル（１行１キーワード） |
-| `departments.txt` | 部局情報取得のためのインデックスツリー情報をまとめたファイル<br>（自動取得する場合、https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool をご活用ください。）|
+| `departments.txt` | 部局情報取得のためのインデックスツリー情報をまとめたファイル<br>取得方法については，[3. 部局名－インデックスツリー番号対応表作成](#department-index-tree)をご覧ください。
 | `fields.txt` | 部局名を分野名に変換するための対応表 |
+
+※departments.txtを自動取得する場合、別途ツール（https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool） をご活用ください。
 
 ### 実行プログラム
 
