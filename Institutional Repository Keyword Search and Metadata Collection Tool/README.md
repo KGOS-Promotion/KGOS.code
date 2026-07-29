@@ -142,7 +142,7 @@ pip list
 
 `departments.txt`
 
-　本ファイルは、API情報から部局名を抽出する際に必要となる、部局名とインデックスツリー番号を対応づけるファイルです。本対応表は「Automatic Index Tree Data Acquisition tool」（[URL](https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool)）を用いて自動取得可能です。また、以下例のとおり，インデックスツリーごとのページのURL末尾から手動で取得することも可能です。
+　本ファイルは、API情報から部局名を抽出する際に必要となる、部局名とインデックスツリー番号を対応づけるファイルです。本対応表は「Index Tree Structure Retrieval Tool」（[URL](https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool)）を用いて自動取得可能です。また、以下例のとおり，インデックスツリーごとのページのURL末尾から手動で取得することも可能です。
 
 
 #### インデックスツリー番号例
