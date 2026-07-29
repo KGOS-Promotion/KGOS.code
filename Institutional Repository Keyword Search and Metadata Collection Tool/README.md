@@ -23,6 +23,8 @@ https://www.lib.kagoshima-u.ac.jp/kgos/showcase/area_dataset/category/kagoshima/
 
 ### ファイルの説明
 
+#### 入力ファイル
+
 | ファイル名 | 説明 |
 |------------|------|
 | `base_url.txt` | 検索対象機関リポジトリのURLを設定するファイル |
@@ -32,13 +34,13 @@ https://www.lib.kagoshima-u.ac.jp/kgos/showcase/area_dataset/category/kagoshima/
 
 ※departments.txtを自動取得する場合、別途ツール（https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool） をご活用ください。
 
-### 実行プログラム
+#### 実行プログラム
 
 | ファイル名 | 説明 |
 |------------|------|
 | `run_meta_collector.py` | プログラムファイル<br>詳細は以下の実行手順を参照してください。 |
 
-### 出力ファイル
+#### 出力ファイル
 
 | ファイル名 | 説明 |
 |------------|------|
