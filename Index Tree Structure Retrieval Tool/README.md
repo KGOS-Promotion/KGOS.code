@@ -15,7 +15,7 @@
 | `departments.txt` | 部局情報取得のためのインデックスツリー情報をまとめたファイル |
 | `error_log.txt` | エラーログを出力するファイル |
 
-> 出力された `departments.txt` は、そのまま「機関リポジトリ キーワード検索・書誌情報収集ツール」のフォルダ内へ配置して利用できます。
+> 出力された `departments.txt` は、そのまま「機関リポジトリ キーワード検索・書誌情報収集ツール<br>( https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool )」のフォルダ内へ配置して利用できます。
 
 ---
 
