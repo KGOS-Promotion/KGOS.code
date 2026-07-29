@@ -235,7 +235,8 @@ error_log.txtへ記録
 ### 引用例
 
 ```text
-KGOS:https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool
+KGOS:Github KGOS-Promotion/KGOS.code
+https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool
 （YYYY年MM月DD日取得）
 ```
 
