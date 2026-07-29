@@ -360,4 +360,5 @@ https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository
 ライセンス条件（MITライセンス）の詳細については、配布元リポジトリをご確認ください。
 
 - KGOS.code Repository
-  - https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset
+
+  https://github.com/kagoshimakgos/KGOS.code/tree/main/Regional%20dataset
