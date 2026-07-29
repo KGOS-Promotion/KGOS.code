@@ -81,25 +81,26 @@ Seleniumを利用するため、最新版のGoogle Chromeをインストール�
 
 https://www.google.com/chrome/
 
-### 3. Python（推奨：Python 3.11以上）
+### 3. Python環境の準備
 
-#### ⑴ Pythonインストール
+#### Pythonインストール（推奨：Python 3.11以上）
 
 Python公式サイト：https://www.python.org （※インストール時にAdd Python to PATHへチェックを入れてください。）
+
+#### Pythonのバージョン確認
 
 以下コマンドにてバージョンご確認ください。
 ```bash
 python --version
 ```
-#### ⑵ 必要ライブラリのインストール
+#### 必要ライブラリのインストール
 
 以下コマンドを実行してください。
-
 ```bash
 pip install selenium pandas requests openpyxl
 ```
 
-#### ⑶ ライブラリのインストール確認
+#### ライブラリのインストール確認
 
 以下コマンドを実行してください。
 
