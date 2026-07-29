@@ -6,7 +6,8 @@
 　利用事例：KGOS＞KGOS発信＞地域別 文献・データセット＞鹿児島市
 
 
-### 利用事例
+### 利用事例：
+
 KGOS > KGOS発信 > 地域別 文献・データセット > 鹿児島市
 
 https://www.lib.kagoshima-u.ac.jp/kgos/showcase/area_dataset/category/kagoshima/
@@ -70,17 +71,19 @@ https://www.lib.kagoshima-u.ac.jp/kgos/showcase/area_dataset/category/kagoshima/
 
 ## 動作環境
 
-### OS
+### 1. OS
 
 - Windows 11 推奨
 
-### Google Chrome
+### 2. Google Chrome
 
 Seleniumを利用するため、最新版のGoogle Chromeをインストールしてください。
 
 https://www.google.com/chrome/
 
-### Python（推奨：Python 3.11以上）
+### 3. Python（推奨：Python 3.11以上）
+
+#### ⑴ Pythonインストール
 
 Python公式サイト：https://www.python.org （※インストール時にAdd Python to PATHへチェックを入れてください。）
 
@@ -88,14 +91,17 @@ Python公式サイト：https://www.python.org （※インストール時にAdd
 ```bash
 python --version
 ```
-### 必要ライブラリ
+#### ⑵ 必要ライブラリのインストール
 
-Pythonを起動し，以下コマンドを実行してください。
+以下コマンドを実行してください。
+
 ```bash
 pip install selenium pandas requests openpyxl
 ```
 
-インストール確認：
+#### ⑶ ライブラリのインストール確認
+
+以下コマンドを実行してください。
 
 ```bash
 pip list
@@ -112,7 +118,30 @@ pip list
 
 ## 事前準備
 
-### 1. 機関リポジトリURL設定
+### 1. 作業フォルダ作成
+
+任意の場所に作業フォルダを作成します。
+
+例
+
+```text
+C:/kgos/hp
+```
+
+### 2. ファイル配置
+
+```text
+例：C:/kgos/hp
+　　├─ base_url.txt（入力ファイル）
+　　├─ keywords.txt（入力ファイル）
+　　├─ departments.txt（入力ファイル）
+　　├─ fields.txt（入力ファイル）
+　　└─ run_meta_collector.py（プログラムファイル）
+```
+
+※ `all_result.csv` および `result_by_keyword.xlsx`,  `error_log.txt（エラーが生じた場合）`は実行後に生成されます。
+
+### 3. 機関リポジトリURL設定
 
 `base_url.txt`に大学名および機関リポジトリURLを設定してください。
 
@@ -120,9 +149,7 @@ pip list
 例：鹿児島大学:https://ir.kagoshima-u.ac.jp
 ```
 
----
-
-### 2. 検索キーワード設定
+### 4. 検索キーワード設定
 
 `keywords.txt`に検索キーワードを設定してください。
 
@@ -134,11 +161,9 @@ pip list
 
 1行につき1キーワードを設定してください。
 
----
-
 <a id="department-index-tree"></a>
 
-### 3. 部局名－インデックスツリー番号対応表作成
+### 5. 部局名－インデックスツリー番号対応表作成
 
 `departments.txt`
 
@@ -171,7 +196,7 @@ https://ir.kagoshima-u.ac.jp/search?page=1&size=50&sort=custom_sort&search_type=
 
 ---
 
-### 4. 部局名－分野名対応表作成
+### 6. 部局名－分野名対応表作成
 
 `fields.txt`
 
