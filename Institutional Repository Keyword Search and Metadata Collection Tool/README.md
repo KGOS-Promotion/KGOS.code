@@ -12,7 +12,7 @@ KGOS > KGOS発信 > 地域別 文献・データセット > 鹿児島市
 
 https://www.lib.kagoshima-u.ac.jp/kgos/showcase/area_dataset/category/kagoshima/
 
-<img width="629" height="218" alt="image" src="https://github.com/user-attachments/assets/67e0c16b-5109-4385-a092-650add68a531" />
+<img width="937" height="342" alt="image" src="https://github.com/user-attachments/assets/a9136e48-cc98-4aaa-80b8-b1ac53c61fd8" />
 
 ※ 基本書誌情報（タイトル，主著者，出版年，文献種別）については一般的に、機関リポジトリ内に収録されている文献等アイテムのランディングページから取得可能ですが、「部局」「分野」は書誌情報として管理されていないため、これができません。このため、鹿児島大学ではこの情報をインデックスツリーの情報から取得しています。
 大学の機関リポジトリのインデックスツリーが鹿児島大学と同様、部局名別になっている場合は、鹿児島大学と同様の方法で、「部局」「分野」を含むリストの作成が可能です。（詳細は、[3. 部局名－インデックスツリー番号対応表作成](#department-index-tree) をご参照ください。）
@@ -387,3 +387,14 @@ https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository
 
 - KGOS.code Repository
  : https://github.com/KGOS-Promotion/KGOS.code
+
+---
+
+## 開発について
+
+本プログラムの開発では，以下の生成AIツールを活用しています。
+
+- Microsoft Copilot (Microsoft)
+- Claude (Anthropic)
+
+生成したコードについては，動作確認，実装テスト，およびエラーハンドリングの確認を行い，最終的な採用判断は開発者が行っています。
