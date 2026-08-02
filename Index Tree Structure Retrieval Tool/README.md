@@ -248,3 +248,12 @@ https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%2
 
 - KGOS.code Repository
    : https://github.com/KGOS-Promotion/KGOS.code
+
+## 開発について
+
+本プログラムの開発では，以下の生成AIツールを活用しています。
+
+- Microsoft Copilot (Microsoft)
+- Claude (Anthropic)
+
+生成したコードについては，動作確認，実装テスト，およびエラーハンドリングの確認を行い，最終的な採用判断は開発者が行っています。
