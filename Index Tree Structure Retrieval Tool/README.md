@@ -235,11 +235,11 @@ error_log.txtへ記録
 ### 日本語
 
 > 石山 裕輝・船守 美穂（2026）．*Index Tree Structure Retrieval Tool*［コンピュータソフトウェア］．鹿児島大学オープンサイエンス研究開発部門．  
-> https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
+> https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool
 
 ### English
 > Ishiyama, Y., & Funamori, M. (2026). *Index Tree Structure Retrieval Tool* [Computer software]. Kagoshima University Open Science Research and Development Division.
-> https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
+> https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool
 
 ---
 
