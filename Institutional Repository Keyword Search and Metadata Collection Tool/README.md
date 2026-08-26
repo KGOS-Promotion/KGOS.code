@@ -379,15 +379,17 @@ max_workers = 2 ～ 5
 
 ---
 
-## 引用について
+## Citation / 引用
 
 本ソースコードを利用した研究成果 等を公表する場合、または改変して再配布する場合は、以下の出典表記をお願いいたします。
 
-```text
-KGOS:Github KGOS-Promotion/KGOS.code
-https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
-（YYYY年MM月DD日取得）
-```
+### 日本語
+
+> 石山 裕輝・船守 美穂（2026）．*Institutional Repository Keyword Search and Metadata Collection Tool*［コンピュータソフトウェア］．鹿児島大学オープンサイエンス研究開発部門．  
+> https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
+
+### English
+> Ishiyama, Y., & Funamori, M. (2026). *Institutional Repository Keyword Search and Metadata Collection Tool* [Computer software]. Kagoshima University Open Science Research and Development Division. https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
 
 ---
 
