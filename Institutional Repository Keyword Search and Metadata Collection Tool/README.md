@@ -389,7 +389,7 @@ max_workers = 2 ～ 5
 > https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
 
 ### English
-> Ishiyama, Y., & Funamori, M. (2026).Institutional Repository Keyword Search and Metadata Collection Tool. Kagoshima Open Science. GitHub repository,
+> Ishiyama, Y., & Funamori, M. (2026).Institutional Repository Keyword Search and Metadata Collection Tool. Kagoshima Open Science (KGOS). GitHub repository,
 > https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
 
 ---
