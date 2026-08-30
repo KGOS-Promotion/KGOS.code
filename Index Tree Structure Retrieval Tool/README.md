@@ -238,7 +238,7 @@ error_log.txtへ記録
 > https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool
 
 ### English
-> Ishiyama, Y., & Funamori, M. (2026). Index Tree Structure Retrieval Tool. Kagoshima Open Science. GitHub repository,<br>
+> Ishiyama, Y., & Funamori, M. (2026). Index Tree Structure Retrieval Tool. Kagoshima Open Science (KGOS). GitHub repository,<br>
 > https://github.com/KGOS-Promotion/KGOS.code/tree/main/Index%20Tree%20Structure%20Retrieval%20Tool
 
 ---
