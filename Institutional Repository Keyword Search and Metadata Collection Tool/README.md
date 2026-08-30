@@ -385,11 +385,11 @@ max_workers = 2 ～ 5
 
 ### 日本語
 
-> 石山 裕輝, 船守 美穂. (2026).Institutional Repository Keyword Search and Metadata Collection Tool.鹿児島オープンサイエンス (KGOS).GitHub repository, <br>
+> 石山 裕輝, 船守 美穂. (2026).Institutional Repository Keyword Search and Metadata Collection Tool. 鹿児島オープンサイエンス (KGOS). GitHub repository, <br>
 > https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
 
 ### English
-> Ishiyama, Y., & Funamori, M. (2026).Institutional Repository Keyword Search and Metadata Collection Tool.Kagoshima Open Science.GitHub repository,
+> Ishiyama, Y., & Funamori, M. (2026).Institutional Repository Keyword Search and Metadata Collection Tool. Kagoshima Open Science. GitHub repository,
 > https://github.com/KGOS-Promotion/KGOS.code/tree/main/Institutional%20Repository%20Keyword%20Search%20and%20Metadata%20Collection%20Tool
 
 ---
